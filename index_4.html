@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<title>CH3EX2:Text Arranger Version 2.0</title>
+	<script src="js/jscolor.js"></script>
+	<script src="js/indexjs_4.js"></script>
+</head>
+<body>
+<div style="position: absolute; top: 50px; left: 50px;">
+	<canvas id="canvasOne" width="500" height="500" ></canvas>
+	<form>
+		Text:<input id="textBox" placeholder="your text">
+		<br>
+
+		Fill Or Stroke :
+		<select id="fillOrStroke">
+			<option value="fill" >fill</option>
+			<option value="stroke" >stroke</option>
+			<option value="both" >both</option>
+		</select>
+		<br>
+		The font:
+		<select id="textFont">
+			<option value="serif">serif</option>
+			<option value="sans-serif">sans-serif</option>
+			<option value="cursive">cursive</option>
+			<option value="fantasy">fantasy</option>
+			<option value="monospace" >monospace</option>
+		</select>
+		<br>
+		Text Size:
+		<input type="range" id="textSize" min="0" max="200" step="1" value="50">
+		<br>
+		Text color:
+		<input class="color" id="textFillColor" value="#ff0000">
+		<br>
+		Font Weight:
+		<select id="fontWeight" >
+			<option value="normal">normal</option>
+			<option value="bold">bold</option>
+			<option value="bolder">bolder</option>
+			<option value="lighter">lighter</option>
+		</select>
+		<br>
+		Font Style:
+		<select id="fontStyle">
+			<option value="normal">normal</option>
+			<option value="italic">italic</option>
+			<option value="oblique" >oblique</option>
+		</select>
+		<br>
+		Text Baseline
+		<select id="textBaseline">
+			<option value="middle">middle</option>
+			<option value="top">top</option>
+			<option value="hanging">hanging</option>
+			<option value="alphabetic">alphabetic</option>
+			<option value="ideographic">ideographic</option>
+			<option value="bottom">bottom</option>
+		</select>
+		<br>
+		Text Align
+		<select id="textAlign">
+			<option value="center">center</option>
+			<option value="start">start</option>
+			<option value="end">end</option>
+			<option value="left">left</option>
+			<option value="right">right</option>
+		</select>
+	</form>
+</div> 
+</body>
+</html>
